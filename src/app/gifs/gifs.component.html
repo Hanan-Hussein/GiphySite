@@ -1,0 +1,19 @@
+<div class="container  my-5">
+
+<div class="d-flex flex-column justofy-content-center align-items-center">
+<div class="my-3">
+    <input type="text"  #searchTerm name="search">
+
+</div>
+<div>
+    <button (click)="performSearch(searchTerm)" class="btn btn-primary">Search</button>
+
+</div>
+</div>
+
+    <div class="row">
+        <div class="col-md-3"  *ngFor="let g of gifs">
+            <img src="{{g.images.original.url}}" class="gif">
+        </div>
+    </div>
+</div>
