@@ -1,14 +1,16 @@
 <div class="container  my-5">
 
-<div class="d-flex flex-column justofy-content-center align-items-center">
-<div class="my-3">
-    <input type="text"  #searchTerm name="search">
-
-</div>
-<div>
-    <button (click)="performSearch(searchTerm)" class="btn btn-primary">Search</button>
-
-</div>
+<div class="d-flex flex-column justify-content-center align-items-center">
+<form #loginForm="ngForm"  >
+    <div class="my-3">
+        <input type="text"  #searchTerm name="search">
+    
+    </div>
+    <div class="d-flex flex-column justify-content-center align-items-center">
+        <button (click)="performSearch(searchTerm,loginForm)" class="btn btn-primary">Search</button>
+    
+    </div>
+</form>
 </div>
 
     <div class="row">
